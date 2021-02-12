@@ -1,0 +1,42 @@
+@import 'utilities.css';
+
+*{
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+}
+html{font-size: 10px;}
+body{
+ background-color: var();
+ line-height: 1.6;
+ color: var();
+}
+
+ul{
+ list-style: none;
+}
+a{
+ color: var(--footer-bg);
+ text-decoration: none;
+}
+
+
+/*navbar*/
+.upper-navbar{
+
+}
+
+.middle-navbar{
+
+}
+.sub-navbar{
+
+}
+
+.content-left{
+ width:45%;
+}
+.content-right{
+ width: 244px;
+ margin-left: 20px;
+}

@@ -1,3 +1,14 @@
+:root{
+ --blue-lagoon-text_color: #007185;
+ --milano-red-text_color: #B12704;
+ --ebony-clay-bg_color: #232f3e;
+ --bunker-bg_color: #131921;
+ --koromiko-btn_color: #febd69;
+ --woodsmoke-text_color: #0F1111;
+ --secondary_color: #565959;
+}
+
+
 .box{
  border: 1px #D5D9D9 solid;
  border-radius: 8px;
@@ -5,4 +16,86 @@
 .small-box{
  border: 1px #D5D9D9 solid;
  border-radius: 2px;
+}
+
+.sub-title{
+ font-size: 14px;
+ line-height: 15px;
+ font-weight: 700;
+}
+
+/***********BUTTONS**********/
+.btn{
+ position: relative;  
+ cursor: pointer;
+ min-width: 130px;
+}
+.icon{
+ position: absolute;
+ z-index: 40;
+ border: 0;
+}
+.btnText{
+ line-height: 29px;
+ padding-left: 36px;  
+ white-space: nowrap;
+}
+.btnText2{
+ line-height: 29px;
+ padding-left: 5px;  
+ white-space: nowrap;
+ float: left;  
+ border-right: 1px #333 solid;
+ min-width: calc(100% - 30px); 
+}
+.sprite02-icons{
+ background-image:url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+ display: inline-block;
+ width: 30px;
+ height: 27px;
+ top: 3px;
+ left: 3px;
+ position: absolute;
+ vertical-align: top;
+}
+.sprite02-icons2{
+ background-image:url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
+ display: inline-block;
+ width: 20px;
+ height: 27px;
+ top: 10px;
+ left: calc(100% - 20px);
+ position: absolute;
+ vertical-align: top;
+}
+/*add to cart*/
+.full-cart-icon{ 
+ background-position: -35px -5px;
+}
+/*buy now*/
+.buy-now-icon{
+ background-position: -35px -60px;  
+}
+/*add to list*/
+.addToList{ 
+ background-position: -5px -100px; 
+}
+
+/*orange button*/
+.amazon-btn{
+ background: #f0c14b;
+ border-color: #a88734 #9c7e31 #846a29;
+ color: #111;
+ border: 1px solid #000;
+ border-radius: 3px;
+ padding: 4px 7px;
+}
+.free{
+ text-transform: uppercase;
+}
+.bold{
+ font-weight: bold;
+}
+.caps{
+ text-transform: capitalize;
 }
