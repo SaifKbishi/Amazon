@@ -6,18 +6,24 @@
  --koromiko-btn_color: #febd69;
  --woodsmoke-text_color: #0F1111;
  --secondary_color: #565959;
+ --alabaster-bg_color: #FAFAFA;
 }
 
 
 .box{
  border: 1px #D5D9D9 solid;
  border-radius: 8px;
+ padding: 15px;
 }
 .small-box{
  border: 1px #D5D9D9 solid;
  border-radius: 2px;
+ min-width: 185px;
+ margin: 5px;
 }
-
+.small-box:hover{
+ border: 1.1px #D0D0D0 solid;
+}
 .sub-title{
  font-size: 14px;
  line-height: 15px;
@@ -29,6 +35,19 @@
  position: relative;  
  cursor: pointer;
  min-width: 130px;
+ background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+ margin: 5px;
+ width: 100%;
+ border-color: #ca7c1b #be751a #a56616;
+ border-radius: 2px;
+}
+.btn2{
+ position: relative;  
+ cursor: pointer;
+ min-width: 130px; 
+ margin: 5px;
+ width: 100%; 
+ border-radius: 2px;
 }
 .icon{
  position: absolute;
@@ -53,10 +72,11 @@
  display: inline-block;
  width: 30px;
  height: 27px;
- top: 3px;
- left: 3px;
+ top: 2px;
+ left: 2px;
  position: absolute;
  vertical-align: top;
+ background-repeat: no-repeat;
 }
 .sprite02-icons2{
  background-image:url('https://m.media-amazon.com/images/S/sash/McBZv0ZvnbehkIx.png');
@@ -67,6 +87,13 @@
  left: calc(100% - 20px);
  position: absolute;
  vertical-align: top;
+ background-repeat: no-repeat;
+}
+.sprite01-icons{
+ background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png'); /*changable*/
+ position: absolute;
+ vertical-align: top;
+ background-repeat: no-repeat;
 }
 /*add to cart*/
 .full-cart-icon{ 
@@ -88,7 +115,9 @@
  color: #111;
  border: 1px solid #000;
  border-radius: 3px;
- padding: 4px 7px;
+ padding: 2px 7px;
+ height: 21px;
+ margin-top: 4px;
 }
 .free{
  text-transform: uppercase;
@@ -99,3 +128,73 @@
 .caps{
  text-transform: capitalize;
 }
+
+
+
+/*social buttons*/
+#mail{
+
+}
+#FB{
+color:blue;
+}
+#tweeter{
+ color: #007185;
+}
+#pinterest{
+ color: red;
+}
+
+/*text colors, weight, bold*/
+.blueLagon{
+ color: var(--blue-lagoon-text_color);
+ font-size: 1.4rem;
+ font-weight: 600;
+}
+.milanoRed{
+ color: var(--milano-red-text_color);
+ font-size: 1.8rem;
+ font-weight: 600;
+}
+
+ .weighted{
+  font-weight: 700;
+ }
+ .bold{
+  font-weight: bold;
+ }
+ /*borders*/
+ .white-border:hover{
+  border: 1px solid #fff;
+  border-radius: 2px;
+ }
+ .orange-border-bottom_text:hover{
+  color: #e47911;
+  border-bottom: 2px solid #f90;
+ }
+ .border-buttom:hover{
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+ }
+
+ .large-image{
+  max-height: 475px;
+    max-width: 618px;
+ }
+
+ .importAndShipping{
+  font-size: 1.4rem;
+  line-height: 2rem;
+ }
+
+.starsImg{
+ max-width: 80px;
+}
+
+
+
+
+ .thead{
+  width: 130px;
+  font-size: 1.4rem;
+ }

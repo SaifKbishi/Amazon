@@ -9,9 +9,135 @@ html{font-size: 10px;}
 body{
  background-color: var();
  line-height: 1.6;
- color: var();
+ /*font-size: 10px;*/
+ font-size: calc(10px + 0.11vw);
+ color: var(--woodsmoke-text_color);
+ font-family: 'Roboto', sans-serif;
+}
+header{
+ display: flex;
+ flex-direction: column;
+}
+.container{
+ max-width: 1500px;
+ margin: 0 auto;
+}
+.logo{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ width: 260px;
+}
+.logoImg{
+ width: 140px;
+}
+#logo{
+ display: inline-block;
+  width: 110px;
+  height: 30px;
+  background-position: -10px -51px;
+  top: 15px;
+  left: 15px;
+}
+.address{
+ position: relative;
+ width: 130px;
+ padding: 10px 0;
+}
+.shipping-address{
+ margin-left: 25px;
+}
+#pinpoint-icon{
+ display: inline-block;
+ background-position:-70px -305px;
+ width: 25px;
+ height: 25px;
+ top: 20px;
+ left: 3px;
+}
+.search{
+ height: 50px;
+ display: flex;
+ justify-content: space-between;
+ padding: 5px 10px;
+ color: #333;
 }
 
+/*start of search*/
+#nav-search{
+ display: flex;
+ border-radius: 5px;
+}
+#search_dropdown{
+ cursor:pointer;
+ background: #f3f3f3;  
+ border-top-left-radius: 5px;
+ border-bottom-left-radius: 5px;
+ padding: 8px 2px 8px 5px;
+ height: 40px;
+ min-width: 45px;
+}
+
+#search-label{
+ background: #f3f3f3;  
+}
+#searchDropdownBox{
+ border: none;
+ background: #f3f3f3;
+}
+.full-arrow-down{
+ background: #f3f3f3;
+}
+#search-text{
+ width: 960px;
+ border-left: 1px solid #c4c4c4;  
+}
+#search-text>input:focus{
+ outline-width: 0;
+}
+#search-text>input{
+ padding:0;
+ height: 40px;
+ border: 0px;
+ width: 100%
+}
+
+#search-button{
+ background: #febd69;
+ width: 40px;
+ height: 40px;
+ border-top-right-radius: 5px;
+ border-bottom-right-radius: 5px;
+ background-position: -5px -285px;
+}
+#search-button img{
+ padding: 7px;
+}
+/*mag icon*/
+.sprite01-icons{
+background-image:url('https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/nav-sprite-global-1x-hm-dsk-reorg._CB405937547_.png'); 
+display: inline-block;
+top: 0px;
+left: 0px;
+position: absolute;
+vertical-align: top;
+background-repeat: no-repeat;
+}
+.icon{
+position: relative;  
+cursor: pointer;
+min-width: 30px; 
+z-index: 40;
+}/*end of serach*/
+#cart{position: relative;}
+.cart-icon{
+ display: inline-block;
+  width: 25px;
+  height: 30px;
+  background-position: -210px -330px;
+  top: 3px;
+  left: 3px;
+}
 ul{
  list-style: none;
 }
@@ -23,20 +149,171 @@ a{
 
 /*navbar*/
 .upper-navbar{
-
+ background: var( --bunker-bg_color);
+ display: flex;
+ justify-content: space-between;
+ color: #fff;
+ height: 60px;
+ padding-top: 3px;
 }
-
+.account{
+ display: flex;
+}
 .middle-navbar{
-
+ background: var(--ebony-clay-bg_color);
+ display: flex;
+ justify-content: flex-start;
+ color: #fff;
+ height: 39px;
+ font-size: 1.4rem;
+ padding-top: 3px;
+}
+.middle-navbar>*{
+ padding: 5px;
+}
+.nav-middle{
+ flex-grow: 1;
+}
+.nav-a{
+ padding: 5px 5px;
 }
 .sub-navbar{
-
+ background: var(--alabaster-bg_color);
+ display: flex;
+ font-size: 1.2rem;
+ height: 33px;
+ padding-top: 5px;
+}
+.nav-b{
+ padding: 0 10px;;
+}
+.product-path{
+ display: flex;
+}
+.product-path>*{
+ padding: 5px;
 }
 
-.content-left{
- width:45%;
+.main-content{
+ display: flex;
 }
+
 .content-right{
  width: 244px;
  margin-left: 20px;
+}
+
+/*main*/
+.content-left{
+ position: sticky;
+ width:45%;
+ float: left;
+}
+
+.content-right > div{
+margin: 10px 0;
+}
+
+.content-main.product{
+ max-width: 550px;
+ width: 45%;
+}
+
+#product-title{
+ font-size: 2.4rem;
+ line-height: 32px;
+}
+#types ul{
+ display: flex;
+ flex-wrap: wrap;
+}
+#types ul li:hover{
+ color:  var(--milano-red-text_color);
+ 
+}
+#types ul li{
+ background: transparent;
+ padding: 10px;
+ cursor: pointer;
+}
+.text-btn{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+}
+.price{
+ padding:10px 15px;
+}
+
+/*right content*/
+#buy-now .btn{
+ background: linear-gradient(to bottom,#f6c88f,#ed9220);
+}
+.share-with-frineds{
+ text-align: center;
+ font-size: 1.5rem;
+ line-height: 1.9rem;
+}
+.share-with-frineds a{
+ padding: 2px;
+}
+.Quantity{
+ margin: 10px 0;
+}
+
+.price .pricePerUnit.milanoRed{
+ font-size: 12px;
+}
+#have-one-to-sell{
+ text-align: center;
+ padding: 2px;
+ margin: 5px;
+}
+#OS-title{
+ font-size: 1.4rem;
+ text-align: center;
+ padding-bottom: 5px;
+}
+#seller_01 .line1,
+#seller_02 .line1{
+ display: flex;
+ justify-content:space-between;
+}
+.feature{
+ display: flex;
+ justify-content: flex-end;
+ width: 330px;
+}
+#similar-items >*{
+ font-size: 1.4rem;
+ }
+.feature-title{
+ padding-right: 100px;
+ flex-grow: 1;
+ font-size: 1.4rem;
+}
+.score{
+ padding: 0 10px;
+ font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 768px){
+ #search-text{
+  width: 200px;
+ }
+ .price{
+  display: none;
+ }
+ .large-image{
+  width: 300px;
+ }
+ .content-main.product{
+  width: 25%;
+ }
+ .content-right{
+  width: 200px;
+ }
+ .middle-navbar{
+  font-size: 1rem;
+ }
 }
