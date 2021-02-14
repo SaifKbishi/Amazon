@@ -5,7 +5,10 @@
  padding: 0;
  margin: 0;
 }
-html{font-size: 10px;}
+html{
+ font-size: 10px;
+ scroll-behavior: smooth;
+}
 body{
  background-color: var();
  line-height: 1.6;
@@ -299,30 +302,6 @@ margin: 10px 0;
  font-size: 1.4rem;
 }
 
-@media only screen and (max-width: 768px){
- #search-text{
-  width: 200px;
- }
- .price{
-  display: none;
- }
- .large-image{
-  width: 300px;
- }
- .content-main.product{
-  width: 25%;
- }
- .content-right{
-  width: 200px;
- }
- .middle-navbar{
-  font-size: 1rem;
- }
-}
-
-
-
-
 /*********************carusel******************************/
 #rated-high{
  display: flex;
@@ -378,3 +357,34 @@ margin: 10px 0;
 }
 
 /***************************************************/
+
+
+@media only screen and (max-width: 768px){
+ #search-text{
+  width: 200px;
+ }
+ .price{
+  /*display: none;*/
+ }
+ .large-image{
+  width: 300px;
+ }
+ .content-main.product{
+  width: 25%;
+ }
+ .content-right{
+  width: 200px;
+ }
+ .middle-navbar{
+  font-size: 1rem;
+  height: 30px;
+ }
+ .nav-b {
+  padding: 0px 4px;
+}
+.sub-navbar{
+ font-size: 9px;
+ height: 25px;
+ border-bottom: 1px solid #c4c4c4;
+}
+}
